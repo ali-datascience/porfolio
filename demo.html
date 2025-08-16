@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Demo - AI Engineering Portfolio</title>
+    <meta name="description" content="Demo features of AI Engineering Portfolio">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        .demo-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .demo-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+        
+        .demo-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .demo-button {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .demo-output {
+            background: var(--light-color);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .color-swatch {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .color-primary { background: var(--primary-color); }
+        .color-secondary { background: var(--secondary-color); }
+        .color-accent { background: var(--accent-color); }
+        .color-dark { background: var(--dark-color); }
+        .color-light { background: var(--light-color); color: var(--text-primary); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Engineer Demo</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#colors" class="nav-link">Colors</a></li>
+                <li><a href="#components" class="nav-link">Components</a></li>
+                <li><a href="#animations" class="nav-link">Animations</a></li>
+                <li><a href="#interactions" class="nav-link">Interactions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Feature Demo</span>
+                        <br>AI Engineering Portfolio
+                    </h1>
+                    <p class="hero-subtitle">
+                        Explore all available features and components in the portfolio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section id="colors" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Color Palette</h2>
+                <p class="section-subtitle">Color scheme used in the portfolio</p>
+            </div>
+            <div class="color-palette">
+                <div class="color-swatch color-primary">
+                    <h4>Primary</h4>
+                    <p>#6366f1</p>
+                </div>
+                <div class="color-swatch color-secondary">
+                    <h4>Secondary</h4>
+                    <p>#8b5cf6</p>
+                </div>
+                <div class="color-swatch color-accent">
+                    <h4>Accent</h4>
+                    <p>#06b6d4</p>
+                </div>
+                <div class="color-swatch color-dark">
+                    <h4>Dark</h4>
+                    <p>#0f172a</p>
+                </div>
+                <div class="color-swatch color-light">
+                    <h4>Light</h4>
+                    <p>#f8fafc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section id="components" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Components</h2>
+                <p class="section-subtitle">Available UI components</p>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Buttons</h3>
+                    <button class="demo-button">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-small">Small Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                </div>
+                
+                <div class="demo-card">
+                                            <h3>Cards</h3>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-content">
+                                <h3>Demo Project</h3>
+                                <p>This is an example project card that can be used.</p>
+                                <div class="project-tech">
+                                    <span>AI</span>
+                                    <span>ML</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Form Elements</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Input Text" />
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Textarea" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animations -->
+    <section id="animations" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Animations</h2>
+                <p class="section-subtitle">Available animation effects</p>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-card">
+                                            <h3>Hover Effects</h3>
+                        <div class="skill-category">
+                            <h4>Skill Category</h4>
+                            <p>Hover to see transform effects</p>
+                        </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Progress Bars</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-python"></i>
+                        <span>Python</span>
+                        <div class="skill-level" data-level="95"></div>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                                            <h3>Timeline</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Demo Experience</h4>
+                                <p>Example timeline item</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactions -->
+    <section id="interactions" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interactions</h2>
+                <p class="section-subtitle">Available interactive features</p>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-card">
+                                            <h3>Theme Toggle</h3>
+                        <p>Click button to change theme</p>
+                        <button id="themeToggle" class="demo-button">
+                            <i class="fas fa-moon"></i> Toggle Theme
+                        </button>
+                        <div class="demo-output" id="themeOutput">
+                            Current theme: Light
+                        </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Notifications</h3>
+                    <button class="demo-button" onclick="showDemoNotification('success')">
+                        Success Notification
+                    </button>
+                    <button class="demo-button" onclick="showDemoNotification('error')">
+                        Error Notification
+                    </button>
+                    <button class="demo-button" onclick="showDemoNotification('info')">
+                        Info Notification
+                    </button>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Counter Animation</h3>
+                    <div class="stat">
+                        <span class="stat-number" id="demoCounter">0</span>
+                        <span class="stat-label">Demo Counter</span>
+                    </div>
+                    <button class="demo-button" onclick="animateDemoCounter()">
+                        Animate Counter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Engineering Portfolio Demo. Made with ❤️ to showcase features.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeOutput = document.getElementById('themeOutput');
+        let currentTheme = 'light';
+        
+        themeToggle.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            themeOutput.textContent = `Current theme: ${currentTheme.charAt(0).toUpperCase() + currentTheme.slice(1)}`;
+            
+            // Update icon
+            const icon = themeToggle.querySelector('i');
+            icon.className = currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        });
+        
+        // Demo Notifications
+        function showDemoNotification(type) {
+            const messages = {
+                success: 'This is a success notification!',
+                error: 'This is an error notification!',
+                info: 'This is an info notification!'
+            };
+            
+            // Create simple notification
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+                z-index: 10000;
+                animation: slideInRight 0.3s ease;
+            `;
+            notification.textContent = messages[type];
+            
+            document.body.appendChild(notification);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+        
+        // Demo Counter Animation
+        function animateDemoCounter() {
+            const counter = document.getElementById('demoCounter');
+            const target = 100;
+            let current = 0;
+            
+            const updateCounter = () => {
+                if (current < target) {
+                    current += 2;
+                    counter.textContent = current;
+                    setTimeout(updateCounter, 20);
+                }
+            };
+            
+            updateCounter();
+        }
+        
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInRight {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        console.log('Demo page loaded successfully! 🚀');
+    </script>
+</body>
+</html>
